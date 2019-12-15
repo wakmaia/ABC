@@ -1,0 +1,60 @@
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.corpo {
+ 
+ 
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+*{font-family: sans-serif;}
+
+.caixa{
+	width:500px;
+	height:1000px;
+	color:black;
+	top:50%;
+	left:50%;
+	position:absolute;
+	background-attachment:scroll;
+
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding-top: 10%;
+	margin-top: 10%;
+	margin-bottom: 20%;
+	background-color: white;
+}
+
+
+.imagem{
+	height: 40%;
+	width:90%;
+	padding-bottom: 0px;
+}
+.imagem img{
+	height: 50%;
+	width:70%;
+	align-items: center;
+}
+
+
+
+h3{color: blue;}
+
