@@ -1,59 +1,139 @@
 * {
-	font-family: sans-serif;
-}
-
-body,
-html {
-	height: 100%;
-	margin: 0;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-:root {
-	--brand-color: #1644ba;
-	--red-color: #ff0000;
-	--button-color: #1747c3;
-}
-
-.corpo {
-	/* Full height */
-	height: 100%;
-	/* Center and scale the image nicely */
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.caixa {
-	width: 500px;
-	height: 1000px;
-	color: black;
-	top: 50%;
-	left: 50%;
-	position: absolute;
-	background-attachment: scroll;
-	transform: translate(-50%, -50%);
 	box-sizing: border-box;
-	padding-top: 10%;
-	margin-top: 10%;
-	margin-bottom: 20%;
+	margin: 0;
+	padding: 0;
+}
+
+/* Adicionamos a imagem de fundo na tag body */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	background: url(/img/PIB-Workersshoot11.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	/* Precisamos colocar essa propriedade abaixo 
+	poder adicionar a camada escura no background */
+	position: relative;
+}
+
+/* Esse codigo abaixo adiciona a camada escura 
+na imagem do background */
+body:after {
+  content: "";
+  display: block;
+  position: fixed; /* podia ser "absolute" tambem, ambos funcioonam */ 
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+	z-index: -1;
+	/* altere o valor 0.5, aumentando ou diminuindo conforme achar melhor */
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 500;
+	line-height: 1.2;
+	margin-bottom: 24px; 
+}
+
+ul {
+	margin-left: 2rem;
+	margin-bottom: 1rem;
+}
+
+p {
+	font-size: 16px;
+	margin-bottom: 1rem;
+}
+
+span {
+	padding-right: 10px;
+}
+
+.caixa-do-conteudo {
+	width: 650px;
+	margin: 40px auto 40px;
+	padding: 40px;
 	background-color: white;
+	/* Colocamos o z-index 1 aqui para que a caixa branca nao fosse pintada pela cor do background */
+	z-index: 1; 
 }
 
-.imagem {
-	height: 40%;
-	width: 90%;
-	padding-bottom: 0px;
+/* Dimensionando a caixa que contem o logo */
+.caixa--do-logo {
+	width: 300px;
+	margin: 30px auto;
 }
 
-.imagem img {
-	height: 50%;
-	width: 70%;
-	align-items: center;
+.logotipo {
+	width: 300px;
+	margin: 0 auto;
 }
 
-h3 {
-	color: blue;
+.titulo {
+	color: #1644ba;
+}
+
+.encorajamos {
+	color: #1644ba;
+	list-style-type: none;
+	font-weight: 500;
+}
+
+.encorajamos h3 {
+	margin: 0;
+}
+
+.vaga-nao-se-vende {
+	list-style-type: none;
+	color: #ff0000;
+}
+
+.submeta-sua-candidatura {
+	list-style: none;
+}
+
+/* Seccao do botao */
+.seccao-do-botao {
+	width: 650px;
+	margin: 80px auto 40px;
+	
+}
+
+/* Botao submeter */
+.butao-submeter {
+	display: block;
+	color: white;
+	background: #1747c3;
+	border: #1747c3;
+	padding: 10px 15px;
+	font-size: 18px;
+	border-radius: 0.3rem;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+/* Este codigo é resonsavel pela responsividade da pagina 
+em dispositivos apartir de 600px pra baixo */
+@media only screen and (max-width: 600px) {
+	.caixa-do-conteudo {
+		width: 90%;
+		padding: 20px;
+	}
+	.logotipo {
+		width: 240px;
+		margin: 30px auto;
+	}
+	.seccao-do-botao {
+		width: 90%;
+		margin: 40px auto 20px;
+	}
+	.butao-submeter {
+		display: block;
+		padding: 15px 80px;
+		margin: 0 auto;
+	}
 }
