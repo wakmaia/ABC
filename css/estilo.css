@@ -1,40 +1,40 @@
+* {
+	font-family: sans-serif;
+}
 
+body,
+html {
+	height: 100%;
+	margin: 0;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
-body, html {
-  height: 100%;
-  margin: 0;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
+:root {
+	--brand-color: #1644ba;
+	--red-color: #ff0000;
+	--button-color: #1747c3;
 }
 
 .corpo {
- 
- 
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+	/* Full height */
+	height: 100%;
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-
-*{font-family: sans-serif;}
-
-.caixa{
-	width:500px;
-	height:1000px;
-	color:black;
-	top:50%;
-	left:50%;
-	position:absolute;
-	background-attachment:scroll;
-
-	transform: translate(-50%,-50%);
+.caixa {
+	width: 500px;
+	height: 1000px;
+	color: black;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	background-attachment: scroll;
+	transform: translate(-50%, -50%);
 	box-sizing: border-box;
 	padding-top: 10%;
 	margin-top: 10%;
@@ -42,19 +42,18 @@ body, html {
 	background-color: white;
 }
 
-
-.imagem{
+.imagem {
 	height: 40%;
-	width:90%;
+	width: 90%;
 	padding-bottom: 0px;
 }
-.imagem img{
+
+.imagem img {
 	height: 50%;
-	width:70%;
+	width: 70%;
 	align-items: center;
 }
 
-
-
-h3{color: blue;}
-
+h3 {
+	color: blue;
+}
